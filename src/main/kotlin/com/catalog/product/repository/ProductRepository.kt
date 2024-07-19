@@ -1,4 +1,8 @@
 package com.catalog.product.repository
 
-interface ProductRepository {
+import com.catalog.product.model.Product
+import org.springframework.data.jpa.repository.JpaRepository
+
+interface ProductRepository : JpaRepository<Product, Long> {
+
 }
